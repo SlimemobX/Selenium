@@ -12,7 +12,7 @@ public class SoftBearSoftwareTest {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
 
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx?ReturnUrl=%2fsamples%2fTestComplete11%2fWebOrders%2fdefault.aspx");
+		driver.get("http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/default.aspx");
 		driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("Tester");
 		driver.findElement(By.name("ctl00$MainContent$password")).sendKeys("test");
 		driver.findElement(By.className("button")).click();
