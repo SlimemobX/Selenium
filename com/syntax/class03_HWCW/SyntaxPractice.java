@@ -1,6 +1,7 @@
 package com.syntax.class03_HWCW;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,8 +29,10 @@ public class SyntaxPractice {
 		driver.findElement(By.xpath("//input[@name = 'phone']")).sendKeys("(123)456-7890");
 		driver.findElement(By.cssSelector("input[placeholder ^= 'Add']")).sendKeys("5959 Black horse ln");
 		driver.findElement(By.cssSelector("input[placeholder ^= 'ci']")).sendKeys("Wilmington");
+		
 		Select state = new Select(driver.findElement(By.xpath("//select[@name = 'state']")));
 		state.selectByVisibleText("Delaware");
+		
 		driver.findElement(By.xpath("//input[@name = 'zip']")).sendKeys("19850");
 		driver.findElement(By.cssSelector("input[name = 'website']")).sendKeys("http:www.google.com");
 		
