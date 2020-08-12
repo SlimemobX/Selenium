@@ -56,7 +56,7 @@ public class FaceBookDD {
 		
 		
 		months.selectByValue("9");
-		days.selectByVisibleText("9");
+		days.selectByVisibleText("10");
 		years.selectByValue("1992");
 		
 		
