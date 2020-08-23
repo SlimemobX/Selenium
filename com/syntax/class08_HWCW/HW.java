@@ -68,6 +68,8 @@ public class HW {
 		System.out.println(verifyText3);
 		
 		
+		driver.quit();
+		
 	}
 
 }
